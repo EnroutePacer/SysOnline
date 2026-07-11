@@ -168,6 +168,7 @@ def Check_Do_test(driver, video_links, VIDEO_LIST, VIDEO_PREFIX):
         continue
 
     driver.get(VIDEO_LIST)
+    driver.refresh()
     new_count = 0
     new_all_links = Get_video_links(driver, VIDEO_PREFIX)
 
